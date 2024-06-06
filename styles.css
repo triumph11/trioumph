@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden; /* Prevent scrolling during loading */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.computer {
+    border-bottom: 1px solid #555;
+    padding: 10px 0;
+}
+
+.computer:last-child {
+    border-bottom: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Loading Animation */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loading-T {
+    font-size: 50px;
+    color: #00f; /* Blue color */
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
